@@ -24,8 +24,8 @@
 <div id="wrapper">
 <h1 class="first"><a href="/" tabindex="-1">Neutri<span>net</span></a></h1>
 <ul id="nav">
-  <li><a href="/" id="home" class="current"><span>Accueil</span><br/>Présentation du projet</a></li>
-  <li><a href="/contact/"><span>Contact</span><br/>Contactez-nous</a></li>
+    <li><a href="/" id="home" {% if flatpage.url == "/" %}class="current"{% endif %}><span>Accueil</span><br/>Présentation du projet</a></li>
+  <li><a href="/contact/" {% if flatpage.url == "/contact/" %}class="current"{% endif %}><span>Contact</span><br/>Contactez-nous</a></li>
 </ul>
 <body>
 <div id="content">
