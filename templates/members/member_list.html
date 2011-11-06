@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% if object_list %}
+<h2>List des demandes d'adhésion</h2>
+
+<ul>
+{% for member in object_list %}
+    <li>Demande de {{ member.surname }} {{ member.name }} datant de {{ member.demande }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+{% endblock %}
