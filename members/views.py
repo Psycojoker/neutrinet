@@ -1,6 +1,7 @@
 # -*- coding:Utf-8 -*-
 from django.shortcuts import render
 from django.views.generic import FormView
+from django.core.urlresolvers import reverse
 
 from datetime import date
 
@@ -14,7 +15,9 @@ def adherer(request):
 class AdhesionFormView(FormView):
     form_class=AdhesionForm
     template_name="members/member_form.html"
-    success_url="/adherer/post/"
+
+    def get_success_url(self):
+        return reverse("members:adherer_post")
 
     def post(self, request, *args, **kwargs):
         to_return = super(AdhesionFormView, self).post(request, *args, **kwargs)
