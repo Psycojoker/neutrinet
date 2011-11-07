@@ -24,3 +24,6 @@ class Member(models.Model):
     cotisation = models.DateField(null=True, blank=True)
     adhesion = models.DateField(null=True, blank=True)
     demande = models.DateField(null=True, blank=True)
+
+    def __unicode__(self):
+        return "%s %s" % (self.surname, self.name)
