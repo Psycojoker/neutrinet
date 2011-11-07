@@ -26,4 +26,4 @@ class Member(models.Model):
     demande = models.DateField(null=True, blank=True)
 
     def __unicode__(self):
-        return "%s %s" % (self.surname, self.name)
+        return "%s %s - %s" % (self.surname, self.name, self.statut)
