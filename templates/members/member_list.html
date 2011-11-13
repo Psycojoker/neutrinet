@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
 
 {% block body %}
-{% if object_list %}
 <h2>List des demandes d'adhésion</h2>
 
+{% if object_list %}
 <ul>
 {% for member in object_list %}
     <li>Demande de {{ member.surname }} {{ member.name }} datant de {{ member.demande }}</li>
 {% endfor %}
 </ul>
+{% else %}
+<p>Il n'y a pas de demandes pour l'instant</p>
 {% endif %}
 {% endblock %}
