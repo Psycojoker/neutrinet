@@ -6,5 +6,5 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^', include('neutrinet.members.urls', namespace='members', app_name='members')),
+    url(r'^', include('members.urls', namespace='members', app_name='members')),
 )

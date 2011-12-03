@@ -110,7 +110,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 )
 
-ROOT_URLCONF = 'neutrinet.urls'
+ROOT_URLCONF = '%s.urls' % PROJECT
 
 TEMPLATE_DIRS = (
     PROJECT_PATH + '/templates',
