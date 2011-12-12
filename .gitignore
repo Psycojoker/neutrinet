@@ -1,0 +1,5 @@
+*.pyc
+*.sw[op]
+settings_local.py
+neutrinet.db
+static_files
