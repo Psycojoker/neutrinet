@@ -15,6 +15,10 @@ Une fois que c'est fait, cloner le dépot et allez dans le nouveau répertoire:
     git clone git://github.com/Psycojoker/neutrinet.git
     cd neutrinet
 
+Ensuite, installez les dépendances:
+
+    pip -r requirements.txt
+
 Puis, pour créer la db (par défaut c'est du sqlite) et charger les fixtures (des données par défaut):
 
     ./manage.py syncdb
