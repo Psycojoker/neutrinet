@@ -1,7 +1,11 @@
 {% extends "base.html" %}
+{% load flatblock_tags %}
 
 {% block content %}
 <h2>Formulaire d'adhésion à l'ASBL Neutrinet</h2>
+
+{% flatblock "adhesion.form.info" %}
+
 <form action="" method="post">
     {% csrf_token %}
     <ul>

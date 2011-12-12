@@ -130,6 +130,7 @@ INSTALLED_APPS = (
     'members',
     'todo',
     'registration',
+    'flatblocks',
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7
