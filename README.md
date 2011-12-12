@@ -6,14 +6,18 @@ Nouvelle version du site de [Neutrinet](http://neutrinet.be).
 
 Pour cela vous devez avoir python et le framework web python [django](https://docs.djangoproject.com) installé.
 
-Sous les debian based python est fournit par défaut, pour installer django:
+Sous les debian based python est fournit par défaut, pour installer django ainsi que pip:
 
-    sudo apt-get install python-django
+    sudo apt-get install python-django python-pip
 
 Une fois que c'est fait, cloner le dépot et allez dans le nouveau répertoire:
 
     git clone git://github.com/Psycojoker/neutrinet.git
     cd neutrinet
+
+Ensuite, installez les dépendances (en root si vous n'êtes pas dans un virtualenv):
+
+    pip -r requirements.txt
 
 Puis, pour créer la db (par défaut c'est du sqlite) et charger les fixtures (des données par défaut):
 
