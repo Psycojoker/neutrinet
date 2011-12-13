@@ -19,6 +19,8 @@ Ensuite, installez les dépendances (en root si vous n'êtes pas dans un virtual
 
     pip -r requirements.txt
 
+Si vous êtes dans un virtualenv installé également django avec pip (pip install django).
+
 Puis, pour créer la db (par défaut c'est du sqlite) et charger les fixtures (des données par défaut):
 
     ./manage.py syncdb
