@@ -131,6 +131,11 @@ INSTALLED_APPS = (
     'todo',
     'registration',
     'flatblocks',
+    'basic.blog',
+    'basic.inlines',
+    'tagging',
+    'django.contrib.markup',
+    'django.contrib.comments',
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7
