@@ -9,4 +9,6 @@ urlpatterns = patterns('',
     url(r'^', include('members.urls', namespace='members', app_name='members')),
     url(r'^todo/', include('todo.urls')),
     url(r'^accounts/', include('registration.backends.default.urls')),
+    url(r'^news/', include('basic.blog.urls')),
+    url(r'^comments/', include('django.contrib.comments.urls')),
 )
