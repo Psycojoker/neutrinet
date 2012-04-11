@@ -15,6 +15,15 @@ Une fois que c'est fait, cloner le dépot et allez dans le nouveau répertoire:
     git clone git://github.com/Psycojoker/neutrinet.git
     cd neutrinet
 
+Si vous voulez créer un virtualenv:
+
+    virtualenv --no-site-packages --distribute ve
+    source ve/bin/activate
+
+Pour en sortir:
+
+    deactivate
+
 Ensuite, installez les dépendances (en root si vous n'êtes pas dans un virtualenv):
 
     pip -r requirements.txt
