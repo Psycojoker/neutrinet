@@ -136,6 +136,7 @@ INSTALLED_APPS = (
     'tagging',
     'django.contrib.markup',
     'django.contrib.comments',
+    'django_extensions',
 )
 
 ACCOUNT_ACTIVATION_DAYS = 7

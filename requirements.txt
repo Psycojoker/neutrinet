@@ -4,3 +4,5 @@ django-flatblocks
 django-tagging
 beautifulsoup
 feedparser
+django_extensions
+Werkzeug
