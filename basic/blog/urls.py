@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import *
+from feeds import BlogPostsFeed
 
 
 urlpatterns = patterns('basic.blog.views',
@@ -37,6 +38,10 @@ urlpatterns = patterns('basic.blog.views',
     url(r'^page/(?P<page>\d+)/$',
         view='post_list',
         name='blog_index_paginated'
+    ),
+    url(r'^rss/$',
+        BlogPostsFeed(),
+        name='blog_rss'
     ),
     url(r'^$',
         view='post_list',
