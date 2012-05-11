@@ -78,6 +78,15 @@ ul#nav li a.current {
 
 /* content */
 
+ul#tweets {
+  list-style-type: none;
+  margin-left: 1em;
+  padding-left: 0;
+}
+ul#tweets li {
+  margin-left: 0;
+  padding-left: 0;
+}
 ul#todo {
   list-style-type: none;
   margin-left: 1em;

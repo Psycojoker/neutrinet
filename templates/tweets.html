@@ -1,3 +1,5 @@
+<ul clas="tweets">
 {% for tweet in tweets %}
 <li><span class="tweet">{{ tweet.summary_detail.value|safe }}</span> <span class="date">{{ tweet.pubDate }}</span> - <span class="link"><a href="{{ tweet.link }}">{{ tweet.link }}</a></span></li>
 {% endfor %}
+</ul>
