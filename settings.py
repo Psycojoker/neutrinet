@@ -111,6 +111,9 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 )
 
+if DEBUG:
+    MIDDLEWARE_CLASSES += ('django_pdb.middleware.PdbMiddleware',)
+
 ROOT_URLCONF = '%s.urls' % PROJECT
 
 TEMPLATE_DIRS = (
@@ -127,6 +130,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.flatpages',
+    'django_pdb',
     'members',
     'todo',
     'registration',
