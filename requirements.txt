@@ -8,3 +8,4 @@ django_extensions
 Werkzeug
 django-pdb
 ipdb
+django-debug-toolbar
