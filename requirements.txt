@@ -3,3 +3,4 @@ django-registration
 django-flatblocks
 django-tagging
 beautifulsoup
+feedparser

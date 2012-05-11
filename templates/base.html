@@ -53,7 +53,7 @@
 $(document).ready(function(){
   $('.tweetwall').html('<p>Chargement...</p>');
 
-  $.get('/static/php/tweetwall.php', function(data) {
+  $.get('{% url tweets %}', function(data) {
     $('.tweetwall').html('').html(data);
     $('.tweetwall ul li').hide();
     $('.tweetwall ul li').slideDown();

@@ -11,4 +11,5 @@ urlpatterns = patterns('',
     url(r'^accounts/', include('registration.backends.default.urls')),
     url(r'^news/', include('basic.blog.urls')),
     url(r'^comments/', include('django.contrib.comments.urls')),
+    url(r'^tweets/', 'views.tweets', name='tweets'),
 )
