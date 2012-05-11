@@ -113,7 +113,9 @@ MIDDLEWARE_CLASSES = (
 )
 
 if DEBUG:
-    MIDDLEWARE_CLASSES += ('django_pdb.middleware.PdbMiddleware',)
+    MIDDLEWARE_CLASSES += (
+        'django_pdb.middleware.PdbMiddleware',
+    )
 
 INTERNAL_IPS = ('127.0.0.1',)
 
@@ -124,6 +126,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    'django_pdb',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -134,7 +137,6 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'django.contrib.flatpages',
     'debug_toolbar',
-    'django_pdb',
     'members',
     'todo',
     'registration',
