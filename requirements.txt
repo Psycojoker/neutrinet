@@ -7,3 +7,4 @@ feedparser
 django_extensions
 Werkzeug
 django-pdb
+ipdb
