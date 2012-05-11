@@ -1,5 +1,5 @@
-from django.conf.urls.defaults import *
 from feeds import BlogPostsFeed
+from django.conf.urls.defaults import patterns, url
 
 
 urlpatterns = patterns('basic.blog.views',
