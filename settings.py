@@ -108,11 +108,14 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
 )
 
 if DEBUG:
     MIDDLEWARE_CLASSES += ('django_pdb.middleware.PdbMiddleware',)
+
+INTERNAL_IPS = ('127.0.0.1',)
 
 ROOT_URLCONF = '%s.urls' % PROJECT
 
@@ -130,6 +133,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.flatpages',
+    'debug_toolbar',
     'django_pdb',
     'members',
     'todo',
