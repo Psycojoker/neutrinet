@@ -1,6 +1,6 @@
 # Intro
 
-Nouvelle version du site de [Neutrinet](http://neutrinet.be).
+Site de [Neutrinet](http://neutrinet.be).
 
 # Comment tester le site?
 
